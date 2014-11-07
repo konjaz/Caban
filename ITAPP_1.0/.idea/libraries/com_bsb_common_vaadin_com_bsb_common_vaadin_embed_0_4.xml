@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="com.bsb.common.vaadin:com.bsb.common.vaadin.embed:0.4" type="repository">
+    <properties maven-id="com.bsb.common.vaadin:com.bsb.common.vaadin.embed:0.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/bsb/common/vaadin/com.bsb.common.vaadin.embed/0.4/com.bsb.common.vaadin.embed-0.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/7.0.26/tomcat-catalina-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/7.0.26/tomcat-servlet-api-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-juli/7.0.26/tomcat-juli-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-annotations-api/7.0.26/tomcat-annotations-api-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-api/7.0.26/tomcat-api-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-util/7.0.26/tomcat-util-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jasper/7.0.26/tomcat-jasper-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jsp-api/7.0.26/tomcat-jsp-api-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-el-api/7.0.26/tomcat-el-api-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/core/compiler/ecj/3.7/ecj-3.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jasper-el/7.0.26/tomcat-jasper-el-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/7.0.26/tomcat-embed-core-7.0.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.7.6/vaadin-6.7.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/11.0.1/guava-11.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
