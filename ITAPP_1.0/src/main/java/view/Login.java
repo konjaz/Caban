@@ -1,3 +1,5 @@
+package view;
+
 import com.vaadin.annotations.Theme;
 import com.vaadin.navigator.*;
 import com.vaadin.server.Page;

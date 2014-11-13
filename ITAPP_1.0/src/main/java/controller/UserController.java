@@ -1,5 +1,7 @@
-package com.springapp.mvc;
+package controller;
 
+import com.springapp.mvc.UserRepository;
+import model.User;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
