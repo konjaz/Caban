@@ -15,7 +15,7 @@
         <servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
         <init-param>
             <param-name>UI</param-name>
-            <param-value>Login</param-value>
+            <param-value>org.freelo.view.SimpleLoginUI</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>

@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="SpringMVCApp.war">
       <element id="artifact" artifact-name="SpringMVCApp:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Vaadin Server" />
+          <element id="library" level="project" name="Spring MVC-4.1.1.RELEASE" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
