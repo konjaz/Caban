@@ -3,6 +3,11 @@
     <output-path>src/main/webapp/VAADIN/widgetsets</output-path>
     <root id="root">
       <element id="gwt-compiler-output" facet="SpringMVCApp/gwt/GWT" />
+      <element id="directory" name="VAADIN">
+        <element id="directory" name="widgetsets">
+          <element id="gwt-compiler-output" facet="SpringMVCApp/gwt/GWT" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

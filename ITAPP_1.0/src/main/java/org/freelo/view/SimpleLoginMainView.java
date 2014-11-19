@@ -1,5 +1,6 @@
 package org.freelo.view;
 
+
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.Button;
@@ -10,6 +11,8 @@ import com.vaadin.ui.Label;
 /**
  * Created by Konrad on 2014-11-17.
  */
+
+
 public class SimpleLoginMainView extends CustomComponent implements View {
 
     public static final String NAME = "";
