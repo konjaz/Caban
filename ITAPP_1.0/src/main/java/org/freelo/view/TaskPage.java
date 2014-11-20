@@ -1,4 +1,5 @@
 package org.freelo.view;
+
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.Page;
@@ -8,6 +9,7 @@ import com.vaadin.ui.*;
 /**
  * Created by Jan on 2014-11-08.
  */
+
 public class TaskPage extends HorizontalLayout implements View{
     public static final String NAME = "";
     public TaskPage() {

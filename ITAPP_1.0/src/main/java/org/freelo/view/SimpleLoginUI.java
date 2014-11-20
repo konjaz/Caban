@@ -1,5 +1,6 @@
 package org.freelo.view;
 
+import com.vaadin.annotations.Theme;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.VaadinRequest;
@@ -8,6 +9,7 @@ import com.vaadin.ui.UI;
 /**
  * Created by Konrad on 2014-11-17.
  */
+@Theme("themefreelo")
 public class SimpleLoginUI extends UI {
 
     @Override
@@ -23,11 +25,12 @@ public class SimpleLoginUI extends UI {
         // The initial log view where the user can login to the application
         //
         getNavigator().addView(SimpleLoginView.NAME, SimpleLoginView.class);//
-        getNavigator().addView(Register.NAME, Register.class);
+
         //
         // Add the main view of the application
         //
-        getNavigator().addView(TaskPage.NAME, TaskPage.class);
+        getNavigator().addView(TaskPage.NAME,
+                TaskPage.class);
 
         //
         // We use a view change handler to ensure the user is always redirected
