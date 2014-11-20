@@ -19,6 +19,8 @@ public class SimpleLoginView extends CustomComponent implements View,
 
     private final Button loginButton;
 
+    private final Button registerButton;
+
     public SimpleLoginView() {
         setSizeFull();
 
@@ -41,12 +43,18 @@ public class SimpleLoginView extends CustomComponent implements View,
 
         // Create login button
         loginButton = new Button("Login", this);
-
+        // Create register button
+        registerButton = new Button("Register", new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent clickEvent) {
+                getUI().getNavigator().navigateTo(Register.NAME);
+            }
+        });
         // Add both to a panel
-        VerticalLayout fields = new VerticalLayout(user, password, loginButton);
+        VerticalLayout fields = new VerticalLayout(user, password, loginButton, registerButton);
         fields.setCaption("Please login to access the application. (test@test.com/passw0rd)");
         fields.setSpacing(true);
-        fields.setMargin(new MarginInfo(true, true, true, false));
+        fields.setMargin(new MarginInfo(true, true, true, true));
         fields.setSizeUndefined();
 
         // The view root layout

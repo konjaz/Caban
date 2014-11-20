@@ -23,12 +23,11 @@ public class SimpleLoginUI extends UI {
         // The initial log view where the user can login to the application
         //
         getNavigator().addView(SimpleLoginView.NAME, SimpleLoginView.class);//
-
+        getNavigator().addView(Register.NAME, Register.class);
         //
         // Add the main view of the application
         //
-        getNavigator().addView(TaskPage.NAME,
-                TaskPage.class);
+        getNavigator().addView(TaskPage.NAME, TaskPage.class);
 
         //
         // We use a view change handler to ensure the user is always redirected
