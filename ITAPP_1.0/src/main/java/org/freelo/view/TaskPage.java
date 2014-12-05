@@ -10,8 +10,9 @@ import com.vaadin.ui.*;
  * Created by Jan on 2014-11-08.
  */
 
-public class TaskPage extends HorizontalLayout implements View{
+public class TaskPage extends HorizontalLayout implements View {
     public static final String NAME = "";
+
     public TaskPage() {
         setSizeFull();
         addStyleName("taskpage");
@@ -23,14 +24,32 @@ public class TaskPage extends HorizontalLayout implements View{
         container.setHeight("80%");
         addComponent(container);
 
+
+        Panel todopanel = new Panel("TODO");
         final CssLayout todo = new CssLayout();
         todo.addStyleName("content");
-        container.addComponent(todo);
-        Label titleTodo = new Label("TODO");
-        titleTodo.addStyleName("title");
-        todo.addComponent(titleTodo);
+        todopanel.addStyleName("todopanel");
+        todopanel.setHeight("100%");
+        todopanel.setContent(todo);
+        container.addComponent(todopanel);
 
+        Panel ongoingpanel = new Panel("ON GOING");
+        final CssLayout ongoing = new CssLayout();
+        ongoing.addStyleName("content");
+        ongoingpanel.addStyleName("ongoingpanel");
+        ongoingpanel.setHeight("100%");
+        ongoingpanel.setContent(ongoing);
+        container.addComponent(ongoingpanel);
 
+        Panel donepanel = new Panel("DONE");
+        final CssLayout done = new CssLayout();
+        done.addStyleName("content");
+        donepanel.addStyleName("donepanel");
+        donepanel.setHeight("100%");
+        donepanel.setContent(done);
+        container.addComponent(donepanel);
+
+/*
         CssLayout ongoing = new CssLayout();
         ongoing.addStyleName("content");
         container.addComponent(ongoing);
@@ -44,7 +63,7 @@ public class TaskPage extends HorizontalLayout implements View{
         Label titleDone = new Label("DONE");
         titleDone.addStyleName("title");
         done.addComponent(titleDone);
-
+*/
 
         Panel panel = new Panel("New Task Page");
         panel.addStyleName("panel");
@@ -63,7 +82,7 @@ public class TaskPage extends HorizontalLayout implements View{
         button1.addClickListener(new Button.ClickListener() {
             public void buttonClick(Button.ClickEvent event) {
                 todo.addComponent(new TaskCard());
-                todo.addComponent(new TaskCard2());
+
 
 
             }
@@ -117,29 +136,21 @@ public class TaskPage extends HorizontalLayout implements View{
             taskTitle.addStyleName("taskAssignee");
             taskCard.addComponent(taskAssignee);
 
+
+            final Button claimButton = new Button("Claim");
+            claimButton.addStyleName("claimButton");
+            /*
+            claimButton.addClickListener(new Button.ClickListener() {
+
+            public void buttonClick(Button.ClickEvent event) {
+            todo.removeComponent(new TaskCard());
+                }
+           });
+            taskCard.addComponent(claimButton);
+        */
         }
 
     }
 
-    public class TaskCard2 extends VerticalLayout {
 
-        public TaskCard2() {
-            final CssLayout taskCard = new CssLayout();
-            taskCard.addStyleName("task-card");
-            taskCard.setWidth("90%");
-            taskCard.setHeight("100px");
-            addComponent(taskCard);
-
-            Label taskTitle = new Label("Task example 2");
-            taskTitle.addStyleName("taskTitle");
-            taskCard.addComponent(taskTitle);
-
-            Label taskAssignee = new Label("Konrad Jażownik");
-            taskTitle.addStyleName("taskAssignee");
-            taskCard.addComponent(taskAssignee);
-
-        }
     }
-
-
-}

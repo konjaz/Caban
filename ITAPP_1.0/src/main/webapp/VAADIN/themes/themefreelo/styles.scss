@@ -5,7 +5,7 @@
   @include valo;
 }
 .container {
-    background-color:  #414b56;
+    //background-color:  #414b56;
 }
 .container2 {
   margin: 10px;
@@ -40,7 +40,9 @@
 .button1{
  margin: 20px;
 }
-
+.v-scrollable {
+  //overflow: hidden;
+}
 
 .title{
   font-size: 16px;
